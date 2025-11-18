@@ -8,22 +8,36 @@ export default function ProductItem({ product }) {
   const dispatch = useDispatch();
 
   const handleAdd = () => {
-    const item = { id: product.id, title: product.title, price: product.price, thumbnail: product.thumbnail };
-    dispatch(addToCart(item));
+    dispatch(
+      addToCart({
+        id: product.id,
+        title: product.title,
+        price: product.price,
+        thumbnail: product.images?.[0] || "",
+      })
+    );
   };
 
   return (
     <div className="product-card">
       <Link to={`/product/${product.id}`}>
-        <img src={product.thumbnail} alt={product.title} loading="lazy" />
+        <img
+          src={product.images?.[0] || ""}
+          alt={product.title}
+          loading="lazy"
+        />
       </Link>
+
       <div className="p-body">
         <h4>{product.title}</h4>
-        <p className="muted">{product.brand}</p>
+        <p className="muted">{product.category?.name}</p>
         <div className="price">₹{product.price}</div>
+
         <div className="actions">
           <button onClick={handleAdd}>Add to Cart</button>
-          <Link to={`/product/${product.id}`} className="details">Details</Link>
+          <Link className="details" to={`/product/${product.id}`}>
+            Details
+          </Link>
         </div>
       </div>
     </div>

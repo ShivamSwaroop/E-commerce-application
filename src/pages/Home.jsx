@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <div>
       <h1>Welcome to ShoppyGlobe</h1>
-      <p>a learning project</p>
 
       <Suspense fallback={<div>Loading products...</div>}>
         <ProductList />

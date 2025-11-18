@@ -1,23 +1,45 @@
 import { useEffect, useState } from "react";
 
 export default function useProducts() {
-  const [data, setData] = useState({ products: [], loading: true, error: null });
+  const [state, setState] = useState({
+    products: [],
+    loading: true,
+    error: null,
+  });
 
   useEffect(() => {
-    let cancelled = false;
-    async function fetchProducts() {
+    let abort = false;
+
+    async function load() {
       try {
-        const res = await fetch("https://dummyjson.com/products");
+        const res = await fetch("https://api.escuelajs.co/api/v1/products");
+
         if (!res.ok) throw new Error("Failed to fetch products");
-        const json = await res.json();
-        if (!cancelled) setData({ products: json.products || [], loading: false, error: null });
+
+        const data = await res.json();
+
+        if (!abort)
+          setState({
+            products: data,
+            loading: false,
+            error: null,
+          });
       } catch (err) {
-        if (!cancelled) setData({ products: [], loading: false, error: err.message || "Error" });
+        if (!abort)
+          setState({
+            products: [],
+            loading: false,
+            error: err.message,
+          });
       }
     }
-    fetchProducts();
-    return () => (cancelled = true);
+
+    load();
+
+    return () => {
+      abort = true;
+    };
   }, []);
 
-  return data;
+  return state;
 }
