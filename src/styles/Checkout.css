@@ -1,0 +1,41 @@
+.checkout {
+    max-width: 700px
+}
+
+.cform {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px
+}
+
+.cform input,
+.cform textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px
+}
+
+.order-summary {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.cform button {
+    background: #0b79d0;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.placed {
+    background: #e8ffe8;
+    padding: 14px;
+    border-radius: 6px
+}

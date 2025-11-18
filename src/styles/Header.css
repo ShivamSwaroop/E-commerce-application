@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    background: #0b79d0;
+    color: #fff
+}
+
+.brand {
+    font-weight: 700;
+    cursor: pointer
+}
+
+.navlinks a {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none
+}
+
+.navlinks a.active {
+    font-weight: 700;
+    text-decoration: underline
+}
+
+.cart-icon {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 6px 10px;
+    border-radius: 6px
+}
+
+.count {
+    background: #fff;
+    color: #0b79d0;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 6px;
+    font-weight: 700
+}

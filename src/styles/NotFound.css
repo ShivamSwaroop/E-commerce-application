@@ -1,0 +1,10 @@
+.notfound {
+    padding: 40px;
+    text-align: center
+}
+
+.notfound code {
+    background: #f4f4f4;
+    padding: 4px 6px;
+    border-radius: 4px
+}

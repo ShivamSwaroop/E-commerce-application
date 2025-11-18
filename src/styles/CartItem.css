@@ -1,0 +1,44 @@
+.cartitem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #eee
+}
+
+.cartitem img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px
+}
+
+.ci-body {
+    flex: 1
+}
+
+.ci-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px
+}
+
+.ci-controls button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer
+}
+
+.remove {
+    background: #ffefef;
+    border: 1px solid #f1c0c0
+}
+
+.ci-price {
+    font-weight: 700
+}

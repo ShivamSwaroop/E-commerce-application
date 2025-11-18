@@ -1,0 +1,32 @@
+.app-root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fallback {
+  padding: 40px 0;
+  text-align: center;
+  color: #444;
+}
+.page-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.mb-12 { margin-bottom: 12px; }
+.p-12  { padding: 12px; }
+
+@media (max-width: 720px) {
+  .app-root { padding: 12px; }
+  .detail img { width: 100%; height: auto; }
+}
+.muted { color: #666; font-size: 0.95rem; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
