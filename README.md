@@ -1,16 +1,63 @@
-# React + Vite
+## ShoppyGlobe E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, clean, React-based E-Commerce application built by a frontend development learner.
+This project fulfills all requirements of the React Project Assignment including routing, components, API integration, cart management, and state handling.
 
-Currently, two official plugins are available:
+ ## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✔ Fetches real products from a live API (EscuelaJS)
+✔ View All Products
+✔ Product Detail Page
+✔ Add to Cart
+✔ Remove from Cart
+✔ Search Products
+✔ Responsive Layout
+✔ Clean design using plain CSS 
+✔ Organized folder structure
+✔ React Router Navigation
+✔ Redux Toolkit for cart & search
+✔ Safe image handling & error handling
 
-## React Compiler
+## Live API Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://api.escuelajs.co/api/v1/products
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+React
+
+React Router DOM
+
+Redux Toolkit
+
+JavaScript
+
+CSS
+
+Vite (development environment)
+
+## How to Run the Project
+To download this project on your system:
+
+git clone https://github.com/ShivamSwaroop/E-commerce-application.git
+
+
+Then open the project folder:
+
+cd ShoppyGlobe
+
+
+Install packages:
+
+npm install
+
+
+Start development server:
+
+npm run dev
+
+
+# Author
+
+Shivam Swaroop Dubey
